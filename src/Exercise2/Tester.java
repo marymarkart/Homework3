@@ -29,7 +29,7 @@ public class Tester {
         graphsView = graph;
         graphsView.setTitle("Graph View");
         graphsView.setLayout(new FlowLayout());
-        graphsView.setPreferredSize(new Dimension(270, 600));
+        graphsView.setPreferredSize(new Dimension(270, 500));
         graphsView.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         graphsView.pack();
         graphsView.setVisible(true);
