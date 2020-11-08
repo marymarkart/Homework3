@@ -2,8 +2,6 @@ package Exercise1;
 
 public class FilterTest<T> implements Filter<T>{
     @Override
-
-
     public boolean accept(T x) {
         //Filter strings longer than 9 characters
         if (x instanceof String){
