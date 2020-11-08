@@ -43,11 +43,13 @@ public class FilterTest<T> implements Filter<T>{
         positiveNumbers = filter(b, intFilter);
 
         //print filtered String array
+        System.out.println("Printing filtered array of Strings:");
         for (int i = 0; i < longStrings.length; i++){
                 System.out.println(longStrings[i]);
         }
 
         //print filtered Integer array
+        System.out.println("Printing filtered array of ints:");
         for (int j = 0; j < positiveNumbers.length; j++){
                 System.out.println(positiveNumbers[j]);
         }
