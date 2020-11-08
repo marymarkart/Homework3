@@ -18,7 +18,7 @@ public class NumberView extends JFrame {
     }
 
     //display NumberView
-    public void createFrame( Numbers nums){
+    public void createFrame(Numbers nums){
         this.n1 = n1;
         this.n2 = n2;
         this.n3 = n3;
@@ -27,9 +27,10 @@ public class NumberView extends JFrame {
         //initialize variables
 
         //create JFrame
-        JFrame numsView = new JFrame();
-        numsView.setLayout(new GridLayout(4,2));
-        numsView.setSize(500, 100);
+        JFrame numberView = new JFrame();
+        numberView.setLayout(new GridLayout(4,2));
+        numberView.setSize(500, 100);
+        numberView.setTitle("Number View");
 
 
         final int FIELD_WIDTH = 5;
@@ -52,13 +53,13 @@ public class NumberView extends JFrame {
         textField3.setText(num3);
 
         //add elements to JFrame
-        numsView.add(label1);
-        numsView.add(textField1);
-        numsView.add(label2);
-        numsView.add(textField2);
-        numsView.add(label3);
-        numsView.add(textField3);
-        numsView.add(update);
+        numberView.add(label1);
+        numberView.add(textField1);
+        numberView.add(label2);
+        numberView.add(textField2);
+        numberView.add(label3);
+        numberView.add(textField3);
+        numberView.add(update);
 
         //add ActionListener to the update button to update values
         update.addActionListener(new ActionListener() {
@@ -73,9 +74,9 @@ public class NumberView extends JFrame {
             }
         });
 
-        numsView.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        numsView.pack();
-        numsView.setVisible(true);
+        numberView.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        numberView.pack();
+        numberView.setVisible(true);
     }
 
     public void updateNumberView(int n1, int n2, int n3, Numbers num){

@@ -1,12 +1,8 @@
 package Exercise2;
 
-import com.sun.javafx.tools.ant.Info;
-import org.w3c.dom.css.Rect;
-
 import javax.swing.*;
 import java.awt.*;
-import java.awt.geom.Ellipse2D;
-import java.awt.geom.Rectangle2D;
+
 
 public class GraphView extends JFrame{
     int n1;
